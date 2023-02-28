@@ -1,4 +1,4 @@
-import add,multiplication,subtraction
+import add,multiplication,subtraction,division
 
 while True:
     print("\nWelcome to the calculator program!")
@@ -30,14 +30,7 @@ while True:
         print("===================================")
         print("The result is:", result)
     elif choice == 4:
-        num1 = float(input("Enter the numerator: "))
-        num2 = float(input("Enter the denominator: "))
-        print("===================================")
-        try:
-            result = num1 / num2
-            print("The result is:", result)
-        except ZeroDivisionError:
-            print("Cannot divide by zero.")
+        division.divide()
     elif choice == 5:
         print("Exiting the calculator program...")
         break
