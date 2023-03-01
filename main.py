@@ -1,4 +1,5 @@
 import add,multiplication,subtraction,division
+import area_square
 
 while True:
     print("\nWelcome to the calculator program!")
@@ -7,9 +8,10 @@ while True:
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
-    print("5. Exit")
+    print("5. Area of Square")
+    print("6. Exit")
 
-    choice = int(input("Enter your choice (1-5): "))
+    choice = int(input("Enter your choice (1-6): "))
     print("="*40)
     if choice == 1:
         num1 = float(input("Enter the first number: "))
@@ -32,6 +34,9 @@ while True:
     elif choice == 4:
         division.divide()
     elif choice == 5:
+        area_square.area_of_square()
+    
+    elif choice == 6:
         print("Exiting the calculator program...")
         break
     else:
