@@ -1,6 +1,3 @@
-def AOT(base,height):
-    area=0.5*base*height
+def AOT():
+    area=0.5*float(input("\nEnter base length : "))*float(input("Enter height : "))
     return(area)
-
-
-print(AOT(3,4))
