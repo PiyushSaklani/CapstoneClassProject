@@ -1,0 +1,108 @@
+From 2e0709ca42d0dee7625d9b6661ed76f21628b13c Mon Sep 17 00:00:00 2001
+From: PiyushSaklani <mailforgithubonly@gmail.com>
+Date: Thu, 2 Mar 2023 10:22:26 +0530
+Subject: [PATCH] main updated
+
+---
+ area_of_rectangle.py |  2 +-
+ area_of_triangle.py  |  2 +-
+ division.py          |  2 +-
+ main.py              | 42 ++++++++++++++++--------------------------
+ 4 files changed, 19 insertions(+), 29 deletions(-)
+
+diff --git a/area_of_rectangle.py b/area_of_rectangle.py
+index c83f8a0..486158b 100644
+--- a/area_of_rectangle.py
++++ b/area_of_rectangle.py
+@@ -1,2 +1,2 @@
+-def rect(l,b):
++def rect():
+     return float(input("\nEnter length : "))*float(input("Enter breadth : "))
+\ No newline at end of file
+diff --git a/area_of_triangle.py b/area_of_triangle.py
+index eea78a8..b5aa64d 100644
+--- a/area_of_triangle.py
++++ b/area_of_triangle.py
+@@ -1,3 +1,3 @@
+-def AOT(base,height):
++def AOT():
+     area=0.5*float(input("\nEnter base length : "))*float(input("Enter height : "))
+     return(area)
+\ No newline at end of file
+diff --git a/division.py b/division.py
+index 325b1ca..606652f 100644
+--- a/division.py
++++ b/division.py
+@@ -4,7 +4,7 @@ def divide():
+         num1 = int(input("\nEnter the numerator: "))
+         num2 = int(input("Enter the denominator: "))
+         result = num1 / num2
+-        print("The result is:", result)
++        return result
+     except ValueError:
+         print("Please enter valid integer values for numerator and denominator.")
+     except ZeroDivisionError:
+diff --git a/main.py b/main.py
+index 53019fe..bea737f 100644
+--- a/main.py
++++ b/main.py
+@@ -3,39 +3,29 @@ import area_of_circle,area_of_rectangle,area_of_triangle,area_square
+ 
+ while True:
+ 
+-    print("\nWelcome to the calculator program\n")
+-    choice = int(input("Please select an operation : \n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Area of Square\n\t6. Area of Rectangle\n\t7. Area of Circle\n\t8. Area of Triangle\n\t9. Exit"))
+-
++    print("-"*40)
+ 
++    print("\nWelcome to the calculator program\n")
++    choice = int(input("Please select an operation : \n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Area of Square\n\t6. Area of Rectangle\n\t7. Area of Circle\n\t8. Area of Triangle\n\t9. Exit\n"))
+ 
+-    choice = int(input("Enter your choice (1-6): "))
+-    print("="*40)
+     if choice == 1:
+-        num1 = float(input("Enter the first number: "))
+-        num2 = float(input("Enter the second number: "))
+-        result = add.add(num1,num2)
+-        print("="*40)
+-        print("The result is:", result)
++        print("\nThe result is:", add.add())
+     elif choice == 2:
+-        num1 = float(input("Enter the first number: "))
+-        num2 = float(input("Enter the second number: "))
+-        print("="*40)
+-        result = subtraction.subtract(num1,num2)
+-        print("The result is:", result)
++        print("\nThe result is:", subtraction.subtract())
+     elif choice == 3:
+-        num1 = float(input("Enter the first number: "))
+-        num2 = float(input("Enter the second number: "))
+-        result = multiplication.multiplication(num1,num2)
+-        print("="*40)
+-        print("The result is:", result)
++        print("\nThe result is:", multiplication.multiplication())
+     elif choice == 4:
+-        division.divide()
++        print("\nThe result is:", division.divide())
+     elif choice == 5:
+-        area_square.area_of_square()
+-    
++        print("\nThe result is:", area_square.area_of_square())
+     elif choice == 6:
+-        print("Exiting the calculator program...")
++        print("\nThe result is:", area_of_rectangle.rect())
++    elif choice == 7:
++        print("\nThe result is:", area_of_circle.calculate_circle_area())
++    elif choice == 8:
++        print("\nThe result is:", area_of_triangle.AOT())
++    elif choice == 9:
++        print("\n\t:)")
+         break
+     else:
+-        print("Invalid choice! Please select a valid option.")
+-    print("="*40)
++        print("\nInvalid input..\nEnter again\t:(")
+\ No newline at end of file
+-- 
+2.37.1 (Apple Git-137.1)
+

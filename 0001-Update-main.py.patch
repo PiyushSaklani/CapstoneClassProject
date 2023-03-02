@@ -1,0 +1,51 @@
+From eaa1f9af3e90e1e43124d55534ae063dc0bad9a6 Mon Sep 17 00:00:00 2001
+From: Piyush Saklani <102040741+PiyushSaklani@users.noreply.github.com>
+Date: Wed, 1 Mar 2023 08:52:35 +0530
+Subject: [PATCH] Update main.py
+
+---
+ main.py | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/main.py b/main.py
+index 1e2aa34..dca55ea 100644
+--- a/main.py
++++ b/main.py
+@@ -10,24 +10,24 @@ while True:
+     print("5. Exit")
+ 
+     choice = int(input("Enter your choice (1-5): "))
+-    print("===================================")
++    print("="*40)
+     if choice == 1:
+         num1 = float(input("Enter the first number: "))
+         num2 = float(input("Enter the second number: "))
+         result = add.add(num1,num2)
+-        print("===================================")
++        print("="*40)
+         print("The result is:", result)
+     elif choice == 2:
+         num1 = float(input("Enter the first number: "))
+         num2 = float(input("Enter the second number: "))
+-        print("===================================")
++        print("="*40)
+         result = subtraction.subtract(num1,num2)
+         print("The result is:", result)
+     elif choice == 3:
+         num1 = float(input("Enter the first number: "))
+         num2 = float(input("Enter the second number: "))
+         result = multiplication.multiplication(num1,num2)
+-        print("===================================")
++        print("="*40)
+         print("The result is:", result)
+     elif choice == 4:
+         division.divide()
+@@ -36,4 +36,4 @@ while True:
+         break
+     else:
+         print("Invalid choice! Please select a valid option.")
+-    print("===================================")
++    print("="*40)
+-- 
+2.37.1 (Apple Git-137.1)
+
