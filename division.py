@@ -1,11 +1,14 @@
-
 def divide():
     try:
-        num1 = int(input("Enter the numerator: "))
-        num2 = int(input("Enter the denominator: "))
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
         result = num1 / num2
-        print("The result is:", result)
-    except ValueError:
-        print("Please enter valid integer values for numerator and denominator.")
     except ZeroDivisionError:
-        print("Cannot divide by zero.")
+        print("\nError: division by zero")
+        return None
+    except ValueError:
+        print("\nError: invalid input")
+        return None
+    else:
+        print(f"{num1} / {num2} = {result}")
+        return result
