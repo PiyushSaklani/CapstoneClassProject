@@ -1,2 +1,2 @@
-def subtract(num1, num2):
-	return num1-num2
+def subtract():
+	return float(input("\nEnter the number a :"))-float(input("Enter the number b :"))

@@ -1,7 +1,6 @@
-def calculate_circle_area(radius):
-
+def calculate_circle_area():
     pi = 3.14159 
-    area = pi * (radius ** 2)
+    area = pi * (float(input("\nEnter the radius : ")) ** 2)
     return area
 
 

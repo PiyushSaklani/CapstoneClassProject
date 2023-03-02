@@ -1,4 +1,2 @@
-def add(num1,num2):
-    return num1+num2
-
- 
+def add():
+    return float(input("\nEnter the number a :"))+float(input("Enter the number b :"))

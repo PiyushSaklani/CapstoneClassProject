@@ -1,15 +1,12 @@
 import add,multiplication,subtraction,division
-import area_square
+import area_of_circle,area_of_rectangle,area_of_triangle,area_square
 
 while True:
-    print("\nWelcome to the calculator program!")
-    print("Please select an operation:")
-    print("1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
-    print("5. Area of Square")
-    print("6. Exit")
+
+    print("\nWelcome to the calculator program\n")
+    choice = int(input("Please select an operation : \n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Area of Square\n\t6. Area of Rectangle\n\t7. Area of Circle\n\t8. Area of Triangle\n\t9. Exit"))
+
+
 
     choice = int(input("Enter your choice (1-6): "))
     print("="*40)
