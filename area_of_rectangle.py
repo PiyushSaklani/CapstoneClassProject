@@ -1,2 +1,2 @@
-def rect(l,b):
+def rect():
     return float(input("\nEnter length : "))*float(input("Enter breadth : "))
