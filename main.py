@@ -6,8 +6,7 @@ while True:
     print("-"*40)
 
     print("\nWelcome to the calculator program\n")
-    choice = int(input("Please select an operation : \n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Area of Square\n\t6. Area of Rectangle\n\t7. Area of Circle\n\t8. Area of Triangle\n\t9. Exit\n"))
-
+    choice = int(input("Please select an operation : \n\t1. Addition\n\t2. Subtraction\n\t3. Multiplication\n\t4. Division\n\t5. Area of Square\n\t6. Area of Rectangle\n\t7. Area of Circle\n\t8. Area of Triangle\n\t9. Exit\n>>>"))
     if choice == 1:
         print("\nThe result is:", add.add())
     elif choice == 2:
